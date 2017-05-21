@@ -9,9 +9,7 @@ import org.apache.hadoop.fs.*;
 public class count {
 
 	public static void main(String[] args) throws IOException {
-		
-		
-		//Path filename = new Path("/home/cloudera/Platforms/Lab1/arbres.csv");
+
 		Path filename = new Path(args[0]);
 		//Open the file
 		Configuration conf = new Configuration();
@@ -33,10 +31,7 @@ public class count {
 				if (count>22){
 					PrintNew(line);
 				}
-				
-				//System.out.println(line);
-				//String[] data = line.split(cvsSplitBy);
-				//System.out.println(data[5] + " " + data[6]+ "\n\n");
+
 				// add line to count
 				count +=1;
 				// go to the next line
